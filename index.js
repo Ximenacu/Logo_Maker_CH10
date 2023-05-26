@@ -55,7 +55,6 @@ inquirer
   ])
   .then( function savedata (response){
     mydata=response;
-    console.log(mydata)
     newFile(mydata);
 });
 
@@ -63,15 +62,12 @@ const newFile = (mydata) => {
   let Logo;
   switch (mydata.name){
     case 'Circle':
-        console.log("A circle")
         Logo = new Circle(mydata.text, mydata.color, mydata.fill);
         break;
       case 'Triangle':
-        console.log("A triangle")
         Logo = new Triangle(mydata.text, mydata.color, mydata.fill);
         break;
       case 'Square':
-        console.log("A sqr")
         Logo = new Square(mydata.text, mydata.color, mydata.fill);
         break;
   }
