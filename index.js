@@ -79,8 +79,10 @@ const newFile = (mydata) => {
   const str = Logo.render();
   const fileNAme = mydata.fileName;
   fs.writeFile(`./examples/${mydata.fileName}.svg`, str, (err) =>
-    err ? console.error(err) : console.log('Success!')
+    err ? console.error(err) : console.log('Generated logo.svg')
   );
+
 } 
 
 
+// #1AA216 green hexa 

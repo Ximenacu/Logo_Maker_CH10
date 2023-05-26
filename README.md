@@ -8,9 +8,9 @@ The parameters you can change from the logo are:
 * Logo text (up to three characters) and color.
 * Logo Shape (circle, triangle, square) and color.
 
-It uses the NPM Inquirer to collect input from the user and Jest for running unit tests. 
+It uses the NPM Inquirer to collect input from the user, FS to generate the svg files and Jest for running unit tests. 
 
-It was developed with the intention of saving developers time and the money the would pay a graphic designer to make logos for their projects. 
+It was developed with the intention of saving developers time and money by eliminating the need for a graphic designer. 
 
 
 ## Table of Contents 
@@ -24,20 +24,18 @@ It was developed with the intention of saving developers time and the money the 
 
 ## Important Links 
 * [Github Repository](https://github.com/Ximenacu/Logo_Maker_CH10)
-* [Walthrough Video]()
+* [Walthrough Video](https://drive.google.com/file/d/1BKQCbaYYulOj4OVtAJhTAKXOmw66Ra8l/view)
 
-# HEre
- 
 
 ## Installation Instructions
 To use this application, you must have Node.js v16 installed. <br/>
-You must also install inquirer in the project by using: <br/>*npm i inquirer@8.2.4*<br/> in the command line. 
+You must also install inquirer in the project by using: *npm i inquirer@8.2.4* in the command line, as well as *npm i inquirer-maxlength-input-prompt*. And finally, to install Jest: *npm i jest*
 
 
 ## Usage Information
 Once all dependencies are installed (See *package.json*), you can invoke que application by the following command: <br/>
 *node index.js* <br/>
-You will be asked about your email, github username, title of the project and the information the README will be filled with. After all the questions are answered, the README file will be generated inside the *Develop* folder. 
+You will be asked to provide the initials for the logo, the text color, the shape (circle, triangle, square) and the shape fill. After all the questions are answered, an SVG file will bewill be generated inside the *examples* folder. 
 
 ## License
 This application is covered under the MIT License. For more info, click here: [License: MIT](https://opensource.org/licenses/MIT)
@@ -46,7 +44,7 @@ This application is covered under the MIT License. For more info, click here: [L
 Not Applicable
 
 ## Tests Instructions
-Not Applicable
+Tests for the classes within the *shapes.js* file, in the folder *lib* were developed and can be found in the same folder. These test make sure the right string is generated when certain parameters are given to a new instance of the classes. To run these tests, enter *npm run test* in the terminal. 
 
 ## Questions
  If you have any questions, please contact me through email at: ximenacuu@gmail.com  <br/>
